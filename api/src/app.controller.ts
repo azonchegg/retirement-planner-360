@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Param } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller({host: 'localhost', path: 'cat'})
+@Controller('cat')
 export class CatController {
   constructor(private readonly appService: AppService) {}
 
